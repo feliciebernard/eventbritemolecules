@@ -1,3 +1,3 @@
 # eventbritemolecules
 
-Molécules faites en peer-rogramming avec Loïck Jouan, Nicolas Pelletier, Félicie Bernard, Sidney Audibert.
+Molécules faites en peer-programming avec Loïck Jouan, Nicolas Pelletier, Félicie Bernard, Sidney Audibert.
