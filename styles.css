@@ -1,0 +1,85 @@
+/* Profile and Events Section*/
+.img-thumbnail {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+
+}
+.description {
+  text-align: justify;
+}
+.participate {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit {
+  font-size: 2em;
+}
+.img-header {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.social {
+  display: flex;
+  margin-top: 15%;
+  justify-content: space-around;
+  
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.profile-name {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*Comments*/
+
+.comment img{
+  position: absolute;
+  float: left;
+  height : 75px;
+  width: 75px;
+  margin-top: -30px;
+  margin-left: -40px;
+  box-shadow: 1px 3px 3px;
+  z-index: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.comment{
+  padding-top: 2.5em;
+  display:block;
+  margin: auto;
+  max-width: 500px;
+}
+
+.new-comment {
+  padding-top: 0.25em;
+  display:block;
+  margin: auto;
+  max-width: 500px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+}
+.btn-comment input{
+  display: flex;
+  justify-content: flex-end;
+}
