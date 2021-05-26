@@ -1,0 +1,236 @@
+/* Profile and Events Section*/
+.img-thumbnail {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+
+}
+.description {
+  text-align: justify;
+}
+.participate {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit {
+  font-size: 2em;
+}
+.img-header {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.social {
+  display: flex;
+  margin-top: 15%;
+  justify-content: space-around;
+  
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.profile-name {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*Comments*/
+
+.comment img{
+  position: absolute;
+  float: left;
+  height : 75px;
+  width: 75px;
+  margin-top: -30px;
+  margin-left: -40px;
+  box-shadow: 1px 3px 3px;
+  z-index: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.comment{
+  padding-top: 2.5em;
+  display:block;
+  margin: auto;
+  max-width: 500px;
+}
+
+.new-comment {
+  padding-top: 0.25em;
+  display:block;
+  margin: auto;
+  max-width: 500px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+}
+.btn-comment input{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iframely-embed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: white;
+}
+
+#app {
+  opacity: 0 !important;
+  visibility: hidden;
+  z-index: 100;
+}
+
+&:hover {
+    opacity: 0.5;
+  }
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding-bottom: 4vmin;
+  height: 100%;
+  width: 100%;
+  background: #ede8e2;
+  color: #3a3535;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+.title {
+  padding-left: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-family: "Prata", serif;
+  font-size: 8vw;
+  width: 100%;
+  z-index: 2;
+}
+
+.title-inner {
+    display: inline-block;
+  }
+
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.cafe,
+.mozart {
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+  outline: 1px solid red;
+}
+
+[class*='inner'] {
+outline: 1px solid blue;
+}
+
+.title-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both;
+}
+
+.cafe-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both,
+  text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.mozart-inner {
+  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.title {
+  animation: outer-left 1s 1s ease both;
+}
+
+.cafe-inner {
+  display: inline-block;
+  }
+
+.mozart {
+  display: inline-block;
+}
+
+.image {
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: -2rem;
+  opacity: 0.7;
+  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+}
+  @keyframes image-in {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  }
